@@ -20,7 +20,5 @@ ADD ./utils /
 ADD requirements/agent.txt /
 RUN pip install --upgrade pip
 RUN pip install -r agent.txt -f https://download.pytorch.org/whl/torch_stable.html
-ADD ./MyoSuite-1.1.0-py2.py3-none-any.whl /
-RUN pip install MyoSuite-1.1.0-py2.py3-none-any.whl
 
 CMD [ "python", "agent_bb.py" ]
