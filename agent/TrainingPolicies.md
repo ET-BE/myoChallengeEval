@@ -43,12 +43,13 @@ Once the policy is trained, it is needed to be loaded in the specific agent to b
 Follow [Step 3](https://github.com/ET-BE/myoChallengeEval#step-3-build-a-docker-container-with-the-agent) and [Step 4](https://github.com/ET-BE/myoChallengeEval#step-4-upload-the-docker-container-on-evalai-for-evaluation) for respectively building the docker container with the agent and uploading it to the evalAI evaluation system.
 
 
-## Personalization of Reward
-One method to improve the performance is the reward shaping. It is possible to customize the reward function by modifing the `get_reward` function in the specific environment e.g. for the [die environment](https://github.com/facebookresearch/myosuite/blob/e3b7d6ebf84ba8f0be7ebf0929e2702b64580b5d/myosuite/envs/myo/myochallenge/reorient_v0.py#L73) or for the [baoding ball](https://github.com/facebookresearch/myosuite/blob/e3b7d6ebf84ba8f0be7ebf0929e2702b64580b5d/myosuite/envs/myo/myochallenge/baoding_v1.py#L143)
-
 ## Evaluation Criteria
 The Dieve and Baoding ball environemnt in the two phases will have different goals, initializations, and evaluation metrices. Below a summary.
 <p align="center">
   <img src='../images/Evaluation.png' alt="teaser results" width="100%"/>
   <p align="center"><i>Evaluation Criteria for the Die and Baoding ball environment in the two phase.</i></p>
 </p>
+
+
+## TIP: Personalization of Reward
+One method to improve the performance is the reward shaping. It is possible to customize the reward function by modifing the `get_reward` function in the specific environment e.g. for the [die environment](https://github.com/facebookresearch/myosuite/blob/e3b7d6ebf84ba8f0be7ebf0929e2702b64580b5d/myosuite/envs/myo/myochallenge/reorient_v0.py#L73) or for the [baoding ball](https://github.com/facebookresearch/myosuite/blob/e3b7d6ebf84ba8f0be7ebf0929e2702b64580b5d/myosuite/envs/myo/myochallenge/baoding_v1.py#L143)
