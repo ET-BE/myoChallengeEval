@@ -28,7 +28,7 @@ fi
 if [ "$PassEvalAI" = "true" ] && [ "$PassDocker" = "true" ]; then
     # Install required dependences
     pip install -r requirements/agent.txt
-    pip install grpcio grpcio-tools MyoSuite-1.1.0-py2.py3-none-any.whl
+    pip install grpcio grpcio-tools myosuite
 
     export PYTHONPATH="./utils/:$PYTHONPATH"
     export PYTHONPATH="./agent/:$PYTHONPATH"
