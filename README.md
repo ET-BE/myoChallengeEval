@@ -8,7 +8,7 @@
   <p align="center"><i>MyoChallenge Tasks</i></p>
 </p>
 
-Welcome to the **2022 NeurIPS - MyoChallenge: Learning contact-rich manipulation using a musculoskeletal hand**.
+Welcome to the [**2022 NeurIPS - MyoChallenge: Learning contact-rich manipulation using a musculoskeletal hand**](https://sites.google.com/view/myochallenge/myochallenge).
 This challenge consists of developing controllers for a physiologically realistic musculoskeletal hand to solve dexterous manipulation tasks:
 
 - A) **Die reorientation task** reconfiguring the die to match the desired orientation (`myoChallengeDieReorientP1-v0`)
