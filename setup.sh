@@ -27,7 +27,9 @@ fi
 
 if [ "$PassEvalAI" = "true" ] && [ "$PassDocker" = "true" ]; then
     # Install required dependences
-    pip install -r requirements/agent.txt
+    pip install --upgrade pip
+    pip install torch
+    pip install -r requirements/agent.txt  -f https://download.pytorch.org/whl/torch_stable.html
     pip install grpcio grpcio-tools myosuite
 
     export PYTHONPATH="./utils/:$PYTHONPATH"

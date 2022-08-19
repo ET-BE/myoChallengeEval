@@ -2,9 +2,7 @@ grpcio==1.47.0
 grpcio-tools==1.47.0
 protobuf==3.20.*
 numpy
-myosuite
-gym==0.25.0
+myosuite==1.2.*
 git+https://github.com/aravindr93/mjrl.git
-torch==1.11.0+cpu
 matplotlib
 tabulate
