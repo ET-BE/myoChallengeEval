@@ -31,7 +31,7 @@ docker build -f docker/agent/Dockerfile_DieEnv . -t myochallengeeval_die_agent
 evalai push myochallengeeval_die_agent:latest --phase myochallenge-diephase1-1844 --public
 
 ```
-
+> [⚠️ Important!] We have updated the task horizon for the Die Reorient task. Plese use MyoSuite >= 1.2.1
 
 ## Prerequisites
 <details closed>
