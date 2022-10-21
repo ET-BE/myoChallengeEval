@@ -31,7 +31,7 @@ docker build -f docker/agent/Dockerfile_DieEnv . -t myochallengeeval_die_agent
 evalai push myochallengeeval_die_agent:latest --phase myochallenge-diephase1-1844 --public
 
 ```
-> [⚠️ Important!] For Phase 2 environment, please upgrade to MyoSuite >= 1.2.2
+> [⚠️ Important!] For Phase 2 environment, please upgrade to MyoSuite >= 1.2.3
 
 ## Prerequisites
 <details closed>
