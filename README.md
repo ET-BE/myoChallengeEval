@@ -31,7 +31,7 @@ docker build -f docker/agent/Dockerfile_DieEnv . -t myochallengeeval_die_agent
 evalai push myochallengeeval_die_agent:latest --phase myochallenge-diephase1-1844 --public
 
 ```
-> [⚠️ Important!] We have updated the task horizon for the Die Reorient task. Plese use MyoSuite >= 1.2.1
+> [⚠️ Important!] For Phase 2 environment, please upgrade to MyoSuite >= 1.2.2
 
 ## Prerequisites
 <details closed>
@@ -136,10 +136,17 @@ evalai push <image>:<tag> --phase <phase_name>
 ```
 Use --private or --public flag in the submission command to make the submission private or public respectively.
 
-for example, commands to upload agents might look like:
+for example, commands to upload agents for Phase 1 might look like:
 - Die Reorientation Agent : `evalai push myochallengeeval_die_agent:latest --phase myochallenge-diephase1-1844 --public`
 
 - Baoding Ball Agent: `evalai push myochallengeeval_bb_agent:latest --phase myochallenge-bbphase1-1844 --public`
+
+and, for Phase 2 might look like:
+
+- Die Reorientation Agent : `evalai push myochallengeeval_die_agent:latest --phase myochallenge-diephase2-1844 --public`
+
+- Baoding Ball Agent: `evalai push myochallengeeval_bb_agent:latest --phase myochallenge-bbphase2-1844 --public`
+
 
 For more commands, please refer to [evalai-cli documentation](https://cli.eval.ai/) for additional commands.
 
