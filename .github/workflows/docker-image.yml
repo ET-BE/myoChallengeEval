@@ -20,7 +20,9 @@ jobs:
         python-version: "3.10"
 
     - name: Install evalAI
-      run: pip install "evalai>=1.3.13"
+      run: |
+        pkg install libxml2-dev libxslt-dev libiconv-dev
+        pip install "evalai>=1.3.13"
 
     - name: Set EvalAI token
       run: |
