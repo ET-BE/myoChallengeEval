@@ -21,7 +21,7 @@ jobs:
 
     - name: Install evalAI
       run: |
-        pkg install libxml2-dev libxslt-dev libiconv-dev
+        apt-get install libxml2-dev libxslt-dev libiconv-dev
         pip install "evalai>=1.3.13"
 
     - name: Set EvalAI token
