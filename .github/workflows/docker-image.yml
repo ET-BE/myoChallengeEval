@@ -21,8 +21,8 @@ jobs:
 
     - name: Set EvalAI token
       run: |
-        echo ${{ secrets.AUTH_TOKEN }}
-        evalai set_token ${{ secrets.AUTH_TOKEN }}
+        echo ${{ secrets.EvalAI_token }}
+        evalai set_token ${{ secrets.EvalAI_token }}
         
         
     - name: Register the token to identify your contribution
