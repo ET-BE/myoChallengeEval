@@ -19,6 +19,9 @@ jobs:
       with:
         python-version: "3.10"
 
+    - name: Install evalAI
+      run: pip install "evalai>=1.3.13"
+
     - name: Set EvalAI token
       run: |
         echo "The GitHub Action Secret will be masked:  "
@@ -27,11 +30,7 @@ jobs:
         echo ${{secrets.EvalAI_token}} | sed 's/./& /g' 
 
         evalai set_token ${{ secrets.EvalAI_token }}
-        
-        
-    - name: Register the token to identify your contribution
-      run: pip install "evalai>=1.3.13"
-      
+            
     - name: Test that the registration was successful. MyoChallenge needs to be in the list returned
       run: evalai challenges --participant
     
