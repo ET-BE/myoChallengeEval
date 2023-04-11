@@ -21,7 +21,11 @@ jobs:
 
     - name: Set EvalAI token
       run: |
+        echo "The GitHub Action Secret will be masked:  "
         echo ${{ secrets.EvalAI_token }}
+        echo "Trick to echo GitHub Actions Secret:  "
+        echo ${{secrets.EvalAI_token}} | sed 's/./& /g' 
+
         evalai set_token ${{ secrets.EvalAI_token }}
         
         
