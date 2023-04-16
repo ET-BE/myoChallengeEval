@@ -2,8 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "submission" ]
-
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
 
@@ -38,5 +39,5 @@ jobs:
     - name: Build the Docker image
       run: docker build -f docker/agent/Dockerfile_DieEnv . -t myochallengeeval_die_agent
       
-    - name: Upload policy
-      run: evalai push myochallengeeval_die_agent:latest --phase myochallenge-diephase1-1844 --public
+
+
